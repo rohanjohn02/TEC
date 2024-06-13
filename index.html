@@ -5,26 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div id="wrapper">
-
-        <div class="container">
-            <img src="TEC_family.jpg" class="background">
-            <img src="TEC_logo.png" id="fground" class="foreground">
-            <h1>The Ensemble Crew</h1>
+    <header>
+        <a href="#" class="brand">TEC</a>
+        <div class="nav">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href='#'>Home</a>
+            <a href='#'>About</a>
+            <a href='#'>Achievements</a>
+            <a href='#'>Event</a>
+            <a href='#'>Contact</a>
         </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+    <section class="section-main">
+        <h1>The Ensemble Crew</h1>
+    </section>
 
-        <section>
-            <h2 class="secHeading">Who are WE?</h2>
-            <p class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
-                <br> <br>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
-            </p>
-        </section>
+    <section class="section-two">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa aliquid, animi quos tenetur aut doloribus sed itaque odit doloremque aliquam. Eligendi, quaerat. Porro, fugiat dolor excepturi itaque ipsum dolore optio.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi magni eum at quia vero velit ducimus facere consequuntur! Asperiores, alias at suscipit maiores praesentium aspernatur recusandae sint ducimus voluptatibus fugit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis doloremque laboriosam in pariatur, nihil, non minus cumque omnis porro nostrum distinctio nobis deserunt rerum, tenetur odio. Saepe, delectus expedita.</p>
+        <h2>Achievements</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa aliquid, animi quos tenetur aut doloribus sed itaque odit doloremque aliquam. Eligendi, quaerat. Porro, fugiat dolor excepturi itaque ipsum dolore optio.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi magni eum at quia vero velit ducimus facere consequuntur! Asperiores, alias at suscipit maiores praesentium aspernatur recusandae sint ducimus voluptatibus fugit!</p>
+    </section>
 
+    <script type="text/javascript">
+        //js for nav bar scroll effect
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
 
-    </div>
+        //JS for responsiveness of nav bar
+        var menu = document.querySelector('.nav');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+
+    </script>
 </body>
 </html>
