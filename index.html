@@ -48,6 +48,46 @@
         </div>
     </section>
 
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="TEC_family.jpg" alt="">
+      </div>
+      <div class="about-text">
+        <h2 class="about_head">Who Are We?</h2>
+        <h4 class="about_content">We are an All-Style Crew</h4>
+        <p class="about_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, corrupti voluptatem. Facere est aperiam, vitae exercitationem, placeat pariatur iure quis libero asperiores nisi reprehenderit ratione esse distinctio in reiciendis cupiditate!</p>
+        <a href="#" class="college_links">KORUS</a>
+        <a href="#" class="college_links">KIIT</a>
+      </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact Us</h2>
+        <h4>Let's Work together</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente suscipit dolorem, amet minima quasi, recusandae beatae labore odit nulla quia quidem reiciendis molestias eligendi praesentium quo, vel error quas.</p>
+            <div class="contact-list">
+              <li><i class='bx bxs-envelope'></i></li>
+            </div>
+            <div class="contact-icons">
+              <a href=""><i class='bx bx-envelope'></i></a>
+              <a href=""><i class='bx bxl-instagram'></i></a>
+              <a href=""><i class='bx bx-mobile' ></i></a>
+            </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="" placeholder="Enter your Name" required>
+          <input type="email" placeholder="Enter your Email" required>
+          <input type="" placeholder="Enter your Subject">
+          <textarea name="" id="" cols="40" rows="10" placeholder="Enter your Message" required></textarea>
+          <button type="submit" class="btn-pink" id="submit-btn">Send Message
+        </form>
+      </div>
+    </section>
+
 
 
     <!---Scroll Reveal Effect-->
@@ -59,8 +99,14 @@
         delay: 450,
         reset: true
       });
-      sr.reveal('.hero-text',{delay:200, origin:'left'});
-      sr.reveal('.hero-img',{delay:600, origin:'right'});
+      sr.reveal('.hero-text',{delay:200, origin:'right'});
+      sr.reveal('.hero-img',{delay:600, origin:'left'});
+      sr.reveal('.about-img',{delay:600, origin:'left'});
+      sr.reveal('.about_head',{delay:200, origin:'top'});
+      sr.reveal('.about_content',{delay:600, origin:'right'});
+      sr.reveal('.college_links',{delay:700, origin:'bottom'});
+      sr.reveal('.contact-text',{delay:200, origin:'left'});
+      sr.reveal('.contact-form',{delay:200, origin:'right'});
     </script>      
 
       <script type="text/javascript">
