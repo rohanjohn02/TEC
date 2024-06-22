@@ -2,44 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEC</title>
+    <title>TEC Site</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="#" class="brand">TEC</a>
+
+    <header >
+        <img src="TEC_logo.png" alt="LOGO">
         <div class="nav">
             <div class="btn">
-                <i class="fas fa-times close-btn"></i>
+                <i class="bx bx-chevron-right close-btn"></i>
             </div>
             <a href='#'>Home</a>
-            <a href='#'>About</a>
+            <a href='#about'>About</a>
             <a href='#'>Achievements</a>
             <a href='#'>Event</a>
-            <a href='#'>Contact</a>
+            <a href='#contact'>Contact</a>
         </div>
         <div class="btn">
-            <i class="fas fa-bars menu-btn"></i>
+            <i class="bx bx-menu menu-btn"></i>
         </div>
     </header>
-    <section class="section-main">
-        <h1>The Ensemble Crew</h1>
+
+    <section class="hero">
+        <div class="hero-img">
+          <img src="TEC_logo.png" alt="">
+        </div>
+        <div class="hero-text">
+          <h5>KIIT Presents</h5>
+          <h4>Under KSAC</h4>
+          <h1>The Ensemble Crew</h1>
+          
+        </div>
     </section>
 
-    <section class="section-two">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa aliquid, animi quos tenetur aut doloribus sed itaque odit doloremque aliquam. Eligendi, quaerat. Porro, fugiat dolor excepturi itaque ipsum dolore optio.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi magni eum at quia vero velit ducimus facere consequuntur! Asperiores, alias at suscipit maiores praesentium aspernatur recusandae sint ducimus voluptatibus fugit!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis doloremque laboriosam in pariatur, nihil, non minus cumque omnis porro nostrum distinctio nobis deserunt rerum, tenetur odio. Saepe, delectus expedita.</p>
-        <h2>Achievements</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa aliquid, animi quos tenetur aut doloribus sed itaque odit doloremque aliquam. Eligendi, quaerat. Porro, fugiat dolor excepturi itaque ipsum dolore optio.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi magni eum at quia vero velit ducimus facere consequuntur! Asperiores, alias at suscipit maiores praesentium aspernatur recusandae sint ducimus voluptatibus fugit!</p>
-    </section>
 
-    <script type="text/javascript">
+
+    <!---Scroll Reveal Effect-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const sr = ScrollReveal ({
+        distance: '65px' ,
+        duration: 2600,
+        delay: 450,
+        reset: true
+      });
+      sr.reveal('.hero-text',{delay:200, origin:'left'});
+      sr.reveal('.hero-img',{delay:600, origin:'right'});
+    </script>      
+
+      <script type="text/javascript">
         //js for nav bar scroll effect
         window.addEventListener("scroll", function(){
             var header = document.querySelector("header");
@@ -58,7 +82,7 @@
         closeBtn.addEventListener("click", () => {
             menu.classList.remove('active');
         });
-
-    </script>
+      </script>
+    
 </body>
 </html>

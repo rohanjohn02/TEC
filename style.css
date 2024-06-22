@@ -1,159 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' , sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
-body{
-    min-height: 100vh;
+:root {
+--bgOrange: #8f9bd0;
 }
 
-.section-main{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background: url(TEC_family.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 100px;
-}
-
-.section-main h1{
-    color: wheat;
-    font-size: 60px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 80px;
-}
-
+/*---NAV BAR---*/
 header{
-    z-index: 999;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-    transition: 0.6s;
+z-index: 999;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 100px;
+transition: 1s;
+transition-property: ease all;
 }
+
+header img{
+z-index: 999;
+height: 4.5vw;
+}
+
 
 header.sticky{
-    background: #000000ca;
-    padding: 15px 100px;
-}
-
-
-header .brand{
-    color: #fff;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
+background: rgba(0, 0, 0, 0.514);
+padding: 15px 100px;
 }
 
 header .nav{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 header .nav a{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    margin: 0 30px;
-    padding: 0 10px;
-    border-radius: 20px;
-    transition: 0.3s;
-    transition-property: color, background;
+color: #fff;
+font-size: 16px;
+font-weight: 500;
+text-decoration: none;
+margin: 0 30px;
+padding: 0 10px;
+border-radius: 20px;
+transition: 0.3s;
+transition-property: color, background;
 }
 
 header .nav a:hover{
-    color: #000;
-    background: #fff;
+color: #000;
+background: #fff;
 }
 
 header .btn{
-    color: #fff;
-    font-size: 25px;
-    cursor: pointer;
-    display: none;
+color: #fff;
+font-size: 25px;
+cursor: pointer;
+display: none;
+z-index: 1000;
 }
 
-.section-two{
-    min-height: 100vh;
-    background: #001018;
-    padding: 20px 100px;
+
+/*Landing Page*/
+.hero{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  /*background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);*/
+  background-image: linear-gradient(to bottom, #2f4a71, #677292, #9b9eb5, #cdcdd9, #ffffff);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2rem;
+}
+section{
+  padding: 0 19%;
+}
+.hero-text h5{
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 15px;
+}
+.hero-text h1{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 90px;
+  line-height: 1;
+  color: white;
+  margin: 0 0 45px;
+}
+.hero-text h4{
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.hero-text p{
+  color: white;
+  font-size: 15px;
+  line-height: 1.9rem;
+  margin-bottom: 40px;
+}
+.hero-img img{
+  width: 500px;
+  height: auto;
 }
 
-.section-two h2{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 50px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 30px 0;
+@media (max-width: 1535px){
+  header{
+      padding: 15px 3%;
+      transition: .2s; 
+  } 
 }
-
-.section-two p{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 18px;
-    margin: 30px 0;
+@media (max-width: 1460px){
+  section{
+      padding: 0 12%;
+      transition: .2s;
+  }
 }
-
-@media (max-width: 1060px)
-{
+@media (max-width: 1340px){
+  .hero-img{
+      width: 100%;
+      height: auto;
+  }
+  .hero-text h1{
+      font-size: 75px;
+      margin: 0 0 30px;
+  }
+  .hero-text h5{
+      margin-bottom: 25px;
+  }
+}
+@media (max-width: 1195px){
+      section{
+          padding: 0 3%;
+          transform: .2s;
+      }
+      .hero-text{
+          padding-top: 115px;
+      }
+      .hero-img{
+          text-align: center;
+      }
+      .hero-img img{
+          width: 300px;
+          height: auto;
+      }
+      .hero{
+          height: 100%;
+          gap: 1rem;
+          grid-template-columns: 1fr;
+      }
+}
+@media (max-width: 990px){
     header .btn{
-        display: block;
-    }
-
-    header .nav{
-        position: fixed;
-        background: rgba(245, 222, 179, 0.607);
-        flex-direction: column;
-        min-width: 400px;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        padding: 80px 50px;
-        transition: 0.5s;
-        transition-property: right;
-    }
-
-    header .nav.active{
-        right: 0;
-    }
-
-
-    header .nav .close-btn{
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 25px;
-    }
-
-    header .nav a{
-        display: block;
-        font-size: 20px;
-        margin: 20px;
-        padding: 0 15px;
-    }
+    display: block;
 }
 
-@media (max-width: 630px){
-    .section-main h1{
-        font-size: 50px;
-        line-height: 60px;
-    }
+header .nav{
+    /*background-color: #9f405f;
+    background-image: linear-gradient(90deg, #9f405f 0%, #4b7fe7 50%, #ffffff 100%);*/
+
+    position: fixed;
+    /*background: rgba(245, 222, 179, 0.607);(actual line of code)*/
+    background: linear-gradient(90deg, #9f405f 0%, #4b7fe7 50%, #ffffff 100%);
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
 }
+
+header .nav.active{
+    right: 0;
+}
+
+
+header .nav .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+}
+
+header .nav a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+}
+
+header img{
+    height: 7.5vw;
+}
+
+  
+}
+@media (max-width: 680px){
+  .hero-img img{
+      width: 100%;
+      height: auto;
+  }
+}
+/*END*/
