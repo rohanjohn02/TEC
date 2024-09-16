@@ -7,7 +7,7 @@ The Ensemble Crew Website is a dynamic and responsive platform developed for sho
 Team
 
 - Rohan John (Lead Developer)
-- [Team Member’s Name] (Co-Developer)
+- Naali Moksha (Co-Developer)
 
 Technologies Used
 
