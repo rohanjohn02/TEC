@@ -62,5 +62,5 @@ Contact
 For any inquiries or feedback, please contact:
 
 - Rohan John: [rohanjohn307@gmail.com](mailto:rohanjohn307@gmail.com)
-- Naali Moksha: [Contact Information]
+- Naali Moksha: [nmoksha15@gmail.com](mailto:nmoksha15@gmail.com)
 
