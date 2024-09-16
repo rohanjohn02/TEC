@@ -18,7 +18,6 @@ window.onscroll = () => {
 
 
 
-
 let slides = document.querySelectorAll('.slide-container');
 let index = 0;
 
