@@ -54,13 +54,13 @@ Challenges and Solutions
 
 Future Improvements
 
-- **Interactive Features:** Consider integrating additional interactive elements, such as an event calendar and a blog section.
-- **Performance Enhancements:** Implement more advanced animations and accessibility features.
+- Interactive Features: Consider integrating additional interactive elements, such as an event calendar and a blog section.
+- Performance Enhancements: Implement more advanced animations and accessibility features.
 
 Contact
 
 For any inquiries or feedback, please contact:
 
 - Rohan John: [rohanjohn307@gmail.com](mailto:rohanjohn307@gmail.com)
-- **[Team Member’s Name]**: [Contact Information]
+- Naali Moksha: [Contact Information]
 
