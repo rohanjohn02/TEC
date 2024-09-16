@@ -1,4 +1,4 @@
-The Ensemble Crew Website
+**The Ensemble Crew Website**
 
 Project Overview
 
